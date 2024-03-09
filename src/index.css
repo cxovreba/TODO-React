@@ -206,10 +206,6 @@ body {
   border: 1px solid #171823;
 }
 
-.dark-mode-styles .task {
-  color: #fff;
-}
-
 .dark-mode-styles .mark,
 .dark-mode-styles .item-left,
 .dark-mode-styles .delete-text {
