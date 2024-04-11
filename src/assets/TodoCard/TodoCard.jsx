@@ -1,6 +1,20 @@
 import React from "react";
 
-const TodoCard = ({ todoId, checkTodoFunction, todo, deletTodoFunction }) => {
+const TodoCard = ({ todoId, checkTodoFunction, todo, deletTodoFunction, isDarkMode }) => {
+  const lightModeStyles = {
+    listStyle: "none",
+    textDecoration: todo.completed ? "line-through" : "none",
+    color: todo.completed ? "#D1D2DA" : "#494C6B",
+    width: "310px",
+  };
+  
+  const darkModeStyles = {
+    ...lightModeStyles,
+    color: todo.completed ? "#4D5067" : "#FFFFFF",
+  };
+  
+  const styles = isDarkMode ? darkModeStyles : lightModeStyles;
+
   return (
     <div className="ul">
       <div
@@ -20,12 +34,7 @@ const TodoCard = ({ todoId, checkTodoFunction, todo, deletTodoFunction }) => {
         />
         <li
           className="task"
-          style={{
-            listStyle: "none",
-            textDecoration: todo.completed ? "line-through" : "none",
-            color: todo.completed ? "grey" : "black",
-            width: "310px",
-          }}
+          style={styles}
         >
           {todo.text}
         </li>

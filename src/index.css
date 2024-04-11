@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 * {
   box-sizing: border-box;
@@ -46,7 +46,7 @@ body {
 }
 
 .title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 36px;
   font-weight: 700;
 }
@@ -60,7 +60,7 @@ body {
   align-items: center;
   padding-inline: 20px;
   gap: 20px;
-  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50); 
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
 }
 
 .circle {
@@ -74,55 +74,55 @@ body {
   width: 425px;
   padding: 20px;
   background: #fff;
-  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .checkbox {
   position: relative;
   width: 25px;
   height: 25px;
-  border: 1px solid #9495A5;
+  border: 1px solid #9495a5;
   border-radius: 20px;
   appearance: none;
   outline: 0;
   cursor: pointer;
   &::before {
-      position: absolute;
-      content: '';
-      display: block;
-      top: 5px;
-      left: 9px;
-      width: 4px;
-      height: 9px;
-      border-style: solid;
-      border-color: #fff;
-      border-width: 0 3px 3px 0;
-      transform: rotate(45deg);
-      opacity: 0;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 5px;
+    left: 9px;
+    width: 4px;
+    height: 9px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    opacity: 0;
   }
   &:checked {
-      color: #fff;
-      border-color: linear-gradient(135deg, #3710BD 0%, #A42395 100%);
-      background: linear-gradient(135deg, #3710BD 0%, #A42395 100%);
-      &::before {
-          opacity: 1;
-      }
+    color: #fff;
+    border-color: linear-gradient(135deg, #3710bd 0%, #a42395 100%);
+    background: linear-gradient(135deg, #3710bd 0%, #a42395 100%);
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
 .btn {
   border: 0;
   background: transparent;
-  color: #494C6B;
+  color: #494c6b;
   font-style: bold;
   font-size: 18px;
 }
 
 .ul {
-  border-bottom: 1px solid #E3E4F1;
+  border-bottom: 1px solid #e3e4f1;
   padding-block: 5px;
 }
 
@@ -136,21 +136,21 @@ body {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.19px;
-  color: #3A7CFD;
+  color: #3a7cfd;
 }
 
 .mark {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.19px;
-  color: #9495A5;
+  color: #9495a5;
 }
 
 .item-left {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.167px;
-  color: #9495A5;
+  color: #9495a5;
 }
 
 .delete-text {
@@ -160,7 +160,7 @@ body {
   background: transparent;
   border: 0;
   padding: 0;
-  color: #9495A5;
+  color: #9495a5;
 }
 
 .desktop-option {
@@ -180,26 +180,30 @@ body {
   text-align: center;
 }
 
-.dark-mode-styles .mode-btn{
+.dark-mode-styles .mode-btn {
   background: url(./assets/Mode-btn/light-mode.png);
 }
 
-.dark-mode-styles .main-container{
+.dark-mode-styles .main-container {
   background: url(./Bitmap1.jpg), #171823;
   background-repeat: no-repeat;
   background-size: 100% 200px;
 }
 
 .dark-mode-styles .input {
-  background: #25273D;
-  color: #C8CBE7;
+  background: #25273d;
+  color: #c8cbe7;
 }
 
 .dark-mode-styles .input-section,
 .dark-mode-styles .result {
-  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
-  background: #25273D;
-  color: #C8CBE7;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+  background: #25273d;
+  color: #c8cbe7;
+}
+
+.dark-mode-styles .task {
+  color: #fffdfb;
 }
 
 .dark-mode-styles .checkbox {
@@ -209,30 +213,30 @@ body {
 .dark-mode-styles .mark,
 .dark-mode-styles .item-left,
 .dark-mode-styles .delete-text {
-  color: #5B5E7E;
+  color: #5b5e7e;
 }
 
 /*Responsive*/
 @media screen and (min-width: 1200px) {
   .container {
-      width: 1140px;
-      margin: auto;
-      padding: 88px 300px;
+    width: 1140px;
+    margin: auto;
+    padding: 88px 300px;
   }
 
   .header {
-      gap: 330px;
-      padding-bottom: 20px;
+    gap: 330px;
+    padding-bottom: 20px;
   }
 
   .title {
-      font-size: 40px;
-      letter-spacing: 15px;
+    font-size: 40px;
+    letter-spacing: 15px;
   }
 
   .input-section {
-      width: 540px;
-      height: 50px;
+    width: 540px;
+    height: 50px;
   }
 
   .add-btn {
@@ -240,17 +244,17 @@ body {
   }
 
   .result {
-      width: 540px;
+    width: 540px;
   }
 
   .desktop-option {
-      display: flex;
-      gap: 15px;
+    display: flex;
+    gap: 15px;
   }
 
   .mark:hover {
-      color: #494C6B;
-      cursor: pointer;
+    color: #494c6b;
+    cursor: pointer;
   }
 
   .dark-mode-styles .mark:hover {
@@ -258,21 +262,21 @@ body {
   }
 
   .delete-text {
-      font-size: 18px;
-      letter-spacing: -0.25px;
-      color: #9495A5;
+    font-size: 18px;
+    letter-spacing: -0.25px;
+    color: #9495a5;
   }
 
   .delete-text:hover {
-      color: #494C6B;
-      cursor: pointer;
+    color: #494c6b;
+    cursor: pointer;
   }
 
   .dark-mode-styles .delete-text:hover {
-    color: #E3E4F1;
+    color: #e3e4f1;
   }
 
   .option {
-      display: none;
+    display: none;
   }
 }
